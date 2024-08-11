@@ -6,5 +6,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface TaskRepository extends MongoRepository<Task, String> {
 
-    Task findByUser(String user);
+    Task findByName(String taskName);
 }
